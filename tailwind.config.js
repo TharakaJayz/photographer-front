@@ -28,6 +28,7 @@ module.exports = {
 
         md_: { max: "767px" },
 
+        sm_2: { max: "420px" },
         sm_: { max: "639px" },
       },
       spacing: {

@@ -15,7 +15,7 @@ const Navbar = () => {
                 </section>
 
                 <section className={`flex  items-center gap-vw3 text-white  transition-all duration-500 origin-top  lg_:w-full  lg_:flex-col scale-y-0 h-0 lg:scale-100 lg:pr-vw5 lg:h-auto lg_:opacity-0 lg_:gap-vh3 lg_:items-start ${navSecLogic &&('lg_:pt-vh5 lg_:pb-vh2 lg_:scale-y-100 lg_:h-vh56 lg_:opacity-100   ')}`}>
-                    <NavLink to="/" className={({ isActive }) =>
+                    <NavLink  to="/" className={({ isActive }) =>
                         isActive ? "text-primary font-semibold lg_:w-full lg_:text-left lg_:text-white lg_:bg-primary  lg_:pl-vw5 lg_:py-vh1  " : "text-white lg_:w-full lg_:text-left lg_:pl-vw5 lg_:py-vh1  "
                     } >Home</NavLink>
                     <NavLink  className={({ isActive }) =>

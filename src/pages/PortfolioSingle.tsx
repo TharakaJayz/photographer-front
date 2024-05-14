@@ -2,6 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom';
 import HeaderSection from '../components/HeaderSection';
 import { formatAlbumHandler2, formatAlbumHandler3, images, maneeshaNethupaAlbum } from '../assets/Images';
+import SingleAlbumImg from '../components/SingleAlbumImg';
 
 
 type Props = {}
@@ -17,12 +18,12 @@ const PortfolioSingle = (props: Props) => {
 
     return (
         <div className='w-full'>
-            <HeaderSection imgUrl={images[0]} title="About Us" desc="this is about us " TextLogic={true} />
+            <HeaderSection imgUrl={images[0]} title="About Us" desc="Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc" TextLogic={true} />
             <div className='w-full px-vw5 bg'>
                 <div className='w-full grid gap-4 grid-cols-3 lg2_:hidden '>
                     <div className=' flex flex-col gap-3'>
                         {album3.one.map((singleImg: any) => {
-                            return <img src={singleImg} alt='tt' />
+                            return <SingleAlbumImg src={singleImg} alt='tt' />
 
                         })}
                     </div>

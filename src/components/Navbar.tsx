@@ -18,19 +18,19 @@ const Navbar = () => {
                 <section className={`flex  items-center gap-vw3 text-white  transition-all duration-500 origin-top  lg_:w-full  lg_:flex-col scale-y-0 h-0 lg:scale-100 lg:pr-vw5 lg:h-auto lg_:opacity-0 lg_:gap-vh3 lg_:items-start ${navSecLogic &&('lg_:pt-vh5 lg_:pb-vh2 lg_:scale-y-100 lg_:h-vh56 lg_:opacity-100   ')}`}>
                     <NavLink  to="/" className={({ isActive }) =>
                         isActive ? "text-primary font-semibold lg_:w-full lg_:text-left lg_:text-white lg_:bg-primary  lg_:pl-vw5 lg_:py-vh1  " : "text-white lg_:w-full lg_:text-left lg_:pl-vw5 lg_:py-vh1  "
-                    } >Home</NavLink>
+                    } onClick={()=>{setNavSecLogic(false)}} >Home</NavLink>
                     <NavLink  className={({ isActive }) =>
                          isActive ? "text-primary font-semibold lg_:w-full lg_:text-left lg_:text-white lg_:bg-primary  lg_:pl-vw5 lg_:py-vh1  " : "text-white lg_:w-full lg_:text-left lg_:pl-vw5 lg_:py-vh1  "
-                    }  to="/about">About US</NavLink>
+                    }  to="/about" onClick={()=>{setNavSecLogic(false)}}>About US</NavLink>
                     <NavLink className={({ isActive }) =>
                          isActive ? "text-primary font-semibold lg_:w-full lg_:text-left lg_:text-white lg_:bg-primary  lg_:pl-vw5 lg_:py-vh1  " : "text-white lg_:w-full lg_:text-left lg_:pl-vw5 lg_:py-vh1  "
-                    } to="/service">Services</NavLink>
+                    } to="/service" onClick={()=>{setNavSecLogic(false)}}>Services</NavLink>
                     <NavLink className={({ isActive }) =>
                         isActive ? "text-primary font-semibold lg_:w-full lg_:text-left lg_:text-white lg_:bg-primary  lg_:pl-vw5 lg_:py-vh1  " : "text-white lg_:w-full lg_:text-left lg_:pl-vw5 lg_:py-vh1  "
-                    } to="/portfolio">Portfolio</NavLink>
+                    } to="/portfolio" onClick={()=>{setNavSecLogic(false)}}>Portfolio</NavLink>
                     <NavLink className={({ isActive }) =>
                         isActive ? "text-primary font-semibold lg_:w-full lg_:text-left lg_:text-white lg_:bg-primary  lg_:pl-vw5 lg_:py-vh1  " : "text-white lg_:w-full lg_:text-left lg_:pl-vw5 lg_:py-vh1  "
-                    } to="/contact">Contact Us</NavLink>
+                    } to="/contact" onClick={()=>{setNavSecLogic(false)}}>Contact Us</NavLink>
                     <button className='bg-transparent border border-white text-white font-semibold px-vw1 sm_:px-vw3 lg_:px-vw2 py-vh1 rounded  transition-all cursor-pointer hover:bg-primary hover:border-primary ml-vw5' onClick={()=>{navigation("/quote")}}  >Request a Quote</button>
                 </section>
                 

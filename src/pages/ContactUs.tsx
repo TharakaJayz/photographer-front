@@ -42,7 +42,7 @@ const ContactUs = (props: Props) => {
                 <FaPhone /> <span>+9471 873 6668</span>
                 </div>
               </div> */}
-              <form className='flex flex-col gap-5 justify-center items-center p-4 bg-primary_light4 rounded-xl w-vw60 px-vw2 py-vh6 text-sm' onSubmit={submitHandler}>
+              <form className='flex flex-col gap-5 justify-center items-center p-4 bg-primary_light4 rounded-xl w-p75 xl2_:w-p85 lg2_:w-p100  px-vw2 py-vh6 text-sm' onSubmit={submitHandler}>
                 <section className='w-full flex justify-between items-center gap-p5'>
                   <div className='flex flex-col justify-start gap-1 w-p50'>
                     <label htmlFor="">First Name</label>

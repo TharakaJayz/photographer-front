@@ -9,7 +9,7 @@ interface Props {
 
 const HeaderSection = (props: Props) => {
   return (
-    <div className="w-full   flex flex-col justify-between gap-vh2 mb-vh3  ">
+    <div className="w-full   flex flex-col justify-between gap-vh5 mb-vh3  ">
       <img
         src={props.imgUrl || ""}
         alt="img"

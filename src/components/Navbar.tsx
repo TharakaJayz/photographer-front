@@ -8,7 +8,7 @@ const Navbar = () => {
     const navigation = useNavigate();
     const [navSecLogic,setNavSecLogic] = useState<boolean>(false);
     return (
-        <div className='  w-full   bg-navcolor  py-vh2   fixed top-0 left-0  z-40'>
+        <div className= {`  w-full   bg-navcolor  py-vh2   fixed top-0 left-0  z-40  `}>
             <div className=' w-full h-full flex items-center justify-between   lg_:flex-col'>
                 <section className='flex justify-between lg_:w-full px-vw5 '>
                 <img src={amlilaLogo} alt='amelia logo' className='w-vw10 min-w-px75' />

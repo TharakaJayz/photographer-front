@@ -17,7 +17,7 @@ const PortfolioCard = (props: Props) => {
             <h3  >{props.title}</h3>
             <h1 className='text-xl font-semibold'>{props.desc}</h1>
         </section>
-     <img src={props.imgUrl} alt="" className='w-full h-vh30 object-cover object-top hover:scale-[0.99] transition-all duration-300' />
+     <img src={props.imgUrl} alt="" className='w-full h-vh30 object-cover object-top hover:scale-[0.99] transition-all duration-300 rounded-md' />
     </div>
      </div>
   )

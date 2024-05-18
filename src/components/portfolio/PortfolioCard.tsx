@@ -1,5 +1,4 @@
 import React from 'react'
-import { images, images2 } from '../../assets/Images'
 import { useNavigate } from 'react-router-dom'
 
 type Props = {
@@ -13,7 +12,7 @@ const PortfolioCard = (props: Props) => {
   const navigation = useNavigate();
   return (
     <div className='w-p31 h-vh40 hover:cursor-pointer ' onClick={()=>{navigation("/portfolio/test_Id")}}>
-    <div className='w-full h-full flex flex-col justify-between'>
+    <div className='w-full h-full flex flex-col justify-start gap-vh2'>
         <section className='capitalize'>
             <h3  >{props.title}</h3>
             <h1 className='text-xl font-semibold'>{props.desc}</h1>

@@ -24,7 +24,7 @@ const Portfolio = (props: Props) => {
       <HeaderSection imgUrl={images[1]} title="Portfolio" desc="Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc" TextLogic={true} />
       <div className='w-full px-vw10 bg'>
         <div className='w-full flex flex-col gap-vh5'>
-          <section className='w-full flex justify-between items-center'>
+          <section className='w-full flex justify-between items-center '>
             <CategoryCard svg={""} title={albumTypes[0]} onClickAction={setTypeFromCard} desc='See our wedding albums' />
             <CategoryCard svg={""} title={albumTypes[1]} onClickAction={setTypeFromCard} desc='See our engagement albums' />
             <CategoryCard svg={""} title={albumTypes[2]} onClickAction={setTypeFromCard} desc='See our pre-shoots albums' />
@@ -32,7 +32,7 @@ const Portfolio = (props: Props) => {
           </section>
 
           {(selectedType === "") && (
-            <section className='w-full flex flex-wrap justify-between items-center   gap-vh5  '>
+            <section className='w-full flex flex-wrap justify-between  items-center   gap-vh3 '>
 
               {albums.map((singleAlbum => {
 

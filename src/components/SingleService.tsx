@@ -8,7 +8,7 @@ interface Props {
 
 const SingleService = (props: serviceType) => {
     return (
-        <div className='w-1/4 xl_:w-full border border-gray-200 rounded-2xl bg-primary_light1 flex items-center justify-center py-vh5'>
+        <div className='w-p35 xl_:w-full border border-gray-200 rounded-2xl bg-primary_light1 flex items-center justify-center py-vh5'>
             <div className='w-full px-vw2 py-vh2 flex flex-col items-center gap-vh1'>
             <h4 className='font-bold text-xl capitalize text-service_svg_bg'> {props.topic}</h4>
             <section className='flex items-center justify-center w-full  sm_:w-p60 md_:w-p35 lg2_:w-p30 lg_:w-p25 xl2_:w-p20 '>

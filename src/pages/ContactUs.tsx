@@ -26,7 +26,7 @@ const ContactUs = (props: Props) => {
     return (
         <div className='w-full'>
           <HeaderSection imgUrl={images[0]} title="Contact Us" desc="Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc " TextLogic = {true} />
-          <div className='w-full px-vw5 bg'>
+          <div className='w-full px-vw5'>
             <section className='w-full flex items-center justify-center'>
               {/* <div className='w-p60 bg-green-500 flex flex-col gap-vh2 px-vw5 text-white'>
                 <div className='flex justify-start items-center gap-vw1 bg-yellow-300'>

@@ -8,6 +8,7 @@ import Portfolio from './pages/Portfolio';
 import AboutUs from './pages/AboutUs';
 import Layout from './layout/Layout';
 import PortfolioSingle from './pages/PortfolioSingle';
+import Quote from './pages/Quote';
 interface Props {
 
 }
@@ -32,6 +33,9 @@ const App = (props: Props) => {
         </Layout>} />
         <Route path='/portfolio' element={<Layout>
           <Portfolio />
+        </Layout>} />
+        <Route path='/quote' element={<Layout>
+          <Quote />
         </Layout>} />
         <Route path='/portfolio/:albumId' element={<Layout>
           <PortfolioSingle />

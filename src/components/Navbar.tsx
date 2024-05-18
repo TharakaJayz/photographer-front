@@ -1,10 +1,11 @@
 import  { useState } from 'react'
 import amlilaLogo from "../assets/amelia_logo.png";
 import { IoMenu } from "react-icons/io5";
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 
 const Navbar = () => {
+    const navigation = useNavigate();
     const [navSecLogic,setNavSecLogic] = useState<boolean>(false);
     return (
         <div className='  w-full   bg-navcolor  py-vh2   fixed top-0 left-0  z-40'>
@@ -30,7 +31,7 @@ const Navbar = () => {
                     <NavLink className={({ isActive }) =>
                         isActive ? "text-primary font-semibold lg_:w-full lg_:text-left lg_:text-white lg_:bg-primary  lg_:pl-vw5 lg_:py-vh1  " : "text-white lg_:w-full lg_:text-left lg_:pl-vw5 lg_:py-vh1  "
                     } to="/contact">Contact Us</NavLink>
-                    <button className='bg-transparent border border-white text-white font-semibold px-vw1 sm_:px-vw3 lg_:px-vw2 py-vh1 rounded  transition-all cursor-pointer hover:bg-primary hover:border-primary ml-vw5'   >Request a Quote</button>
+                    <button className='bg-transparent border border-white text-white font-semibold px-vw1 sm_:px-vw3 lg_:px-vw2 py-vh1 rounded  transition-all cursor-pointer hover:bg-primary hover:border-primary ml-vw5' onClick={()=>{navigation("/quote")}}  >Request a Quote</button>
                 </section>
                 
                 

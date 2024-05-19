@@ -43,7 +43,7 @@ const Portfolio = (props: Props) => {
           )}
 
           {(selectedType !== "") && (
-            <section className='w-full flex flex-wrap justify-start items-center   gap-vh5  '>
+            <section className='w-full flex flex-wrap justify-start items-center   gap-vh5 lg_:gap-vh2 lg_:justify-between '>
 
               {albums.map((singleAlbum => {
                     if(singleAlbum.type === selectedType){

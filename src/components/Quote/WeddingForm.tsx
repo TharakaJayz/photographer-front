@@ -39,8 +39,8 @@ const WeddingForm = (props: Props) => {
         className="flex flex-col gap-5 justify-center items-center p-4  bg-primary_light4 rounded-xl w-full px-vw2 py-vh6 text-sm"
         onSubmit={submitHandler}
       >
-        <section className="w-full flex justify-between items-center gap-p5">
-          <div className="flex flex-col justify-start gap-1 w-p50">
+        <section className="w-full flex justify-between items-center gap-p5 lg2_:flex-col lg2_:items-start lg2_:gap-5">
+          <div className="flex flex-col justify-start gap-1 w-p50 lg2_:w-full">
             <label htmlFor="">Bride's Name</label>
             {errors.brideName && (
               <span className="text-xs text-white">
@@ -54,7 +54,7 @@ const WeddingForm = (props: Props) => {
               {...register("brideName", { required: "This field is required" })}
             />
           </div>
-          <div className="flex flex-col justify-start gap-1 w-p50">
+          <div className="flex flex-col justify-start gap-1 w-p50 lg2_:w-full">
             <label htmlFor="">Groom's Name</label>
             {errors.groomName   && (
               <span className="text-xs text-white">{errors.groomName.message}</span>
@@ -67,8 +67,8 @@ const WeddingForm = (props: Props) => {
             />
           </div>
         </section>
-        <section className="w-full flex justify-between items-center gap-p5">
-          <div className="flex flex-col justify-start gap-1 w-p50">
+        <section className="w-full flex justify-between items-center gap-p5 lg2_:flex-col lg2_:items-start lg2_:gap-5">
+          <div className="flex flex-col justify-start gap-1 w-p50 lg2_:w-full">
             <label htmlFor="">Wedding Date</label>
             {errors.weddingDate && (
               <span className="text-xs text-white">
@@ -82,7 +82,7 @@ const WeddingForm = (props: Props) => {
               {...register("weddingDate", { required: "This field is required" })}
             />
           </div>
-          <div className="flex flex-col justify-start gap-1 w-p50">
+          <div className="flex flex-col justify-start gap-1 w-p50 lg2_:w-full">
             <label htmlFor="">Time</label>
             {errors.Time && (
               <span className="text-xs text-white">{errors.Time.message}</span>
@@ -95,8 +95,8 @@ const WeddingForm = (props: Props) => {
             />
           </div>
         </section>
-        <section className="w-full flex justify-between items-center gap-p5">
-          <div className="flex flex-col justify-start gap-1 w-p50">
+        <section className="w-full flex justify-between items-center gap-p5 lg2_:flex-col lg2_:items-start lg2_:gap-5 ">
+          <div className="flex flex-col justify-start gap-1 w-p50 lg2_:w-full">
             <label htmlFor="">Email</label>
             {errors.email && (
               <span className="text-xs text-white">
@@ -110,7 +110,7 @@ const WeddingForm = (props: Props) => {
               {...register("email", { required: "This field is required" })}
             />
           </div>
-          <div className="flex flex-col justify-start gap-1 w-p50">
+          <div className="flex flex-col justify-start gap-1 w-p50 lg2_:w-full">
             <label htmlFor="">Wedding Location</label>
             {errors.weddingLocation && (
               <span className="text-xs text-white">{errors.weddingLocation.message}</span>
@@ -123,8 +123,8 @@ const WeddingForm = (props: Props) => {
             />
           </div>
         </section>
-        <section className="w-full flex justify-between items-center gap-p5">
-          <div className="flex flex-col justify-start gap-1 w-p50">
+        <section className="w-full flex justify-between items-center gap-p5 lg2_:flex-col lg2_:items-start lg2_:gap-5">
+          <div className="flex flex-col justify-start gap-1 w-p50 lg2_:w-full">
             <label htmlFor="">Number of Guests</label>
             {errors.numOfGuests && (
               <span className="text-xs text-white">
@@ -137,7 +137,7 @@ const WeddingForm = (props: Props) => {
               {...register("numOfGuests", { required: "This field is required" })}
             />
           </div>
-          <div className="flex flex-col justify-start gap-1 w-p50">
+          <div className="flex flex-col justify-start gap-1 w-p50 lg2_:w-full">
             <label htmlFor="">Makeup Artist</label>
             {errors.makeupArtist && (
               <span className="text-xs text-white">{errors.makeupArtist.message}</span>
@@ -150,8 +150,8 @@ const WeddingForm = (props: Props) => {
             />
           </div>
         </section>
-        <section className="w-full flex justify-between items-center gap-p5">
-          <div className="flex flex-col justify-start gap-1 w-p50">
+        <section className="w-full flex justify-between items-center gap-p5 lg2_:flex-col lg2_:items-start lg2_:gap-5">
+          <div className="flex flex-col justify-start gap-1 w-p50 lg2_:w-full">
             <label htmlFor="">Contact</label>
             {errors.contact && (
               <span className="text-xs text-white">
@@ -164,7 +164,7 @@ const WeddingForm = (props: Props) => {
               {...register("contact", { required: "This field is required" })}
             />
           </div>
-          <div className="flex flex-col justify-start gap-1 w-p50">
+          <div className="flex flex-col justify-start gap-1 w-p50 lg2_:w-full">
             <label htmlFor="">How Did You Here About Us</label>
             {errors.howDidFindUs && (
               <span className="text-xs text-white">{errors.howDidFindUs.message}</span>

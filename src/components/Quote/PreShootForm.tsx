@@ -35,8 +35,8 @@ const PreShootForm = (props: Props) => {
         className="flex flex-col gap-5 justify-center items-center p-4  bg-primary_light4 rounded-xl w-full px-vw2 py-vh6 text-sm"
         onSubmit={submitHandler}
       >
-        <section className="w-full flex justify-between items-center gap-p5">
-          <div className="flex flex-col justify-start gap-1 w-p50">
+        <section className="w-full flex justify-between items-center gap-p5 lg2_:flex-col lg2_:items-start lg2_:gap-5">
+          <div className="flex flex-col justify-start gap-1 w-p50 lg2_:w-full">
             <label htmlFor="">Girl's Name</label>
             {errors.girlName && (
               <span className="text-xs text-white">
@@ -50,7 +50,7 @@ const PreShootForm = (props: Props) => {
               {...register("girlName", { required: "This field is required" })}
             />
           </div>
-          <div className="flex flex-col justify-start gap-1 w-p50">
+          <div className="flex flex-col justify-start gap-1 w-p50 lg2_:w-full">
             <label htmlFor="">Boy's Name</label>
             {errors.boyName   && (
               <span className="text-xs text-white">{errors.boyName.message}</span>
@@ -64,8 +64,8 @@ const PreShootForm = (props: Props) => {
           </div>
         </section>
         
-        <section className="w-full flex justify-between items-center gap-p5">
-          <div className="flex flex-col justify-start gap-1 w-p50">
+        <section className="w-full flex justify-between items-center gap-p5 lg2_:flex-col lg2_:items-start lg2_:gap-5">
+          <div className="flex flex-col justify-start gap-1 w-p50 lg2_:w-full">
             <label htmlFor="">Email</label>
             {errors.email && (
               <span className="text-xs text-white">
@@ -79,7 +79,7 @@ const PreShootForm = (props: Props) => {
               {...register("email", { required: "This field is required" })}
             />
           </div>
-          <div className="flex flex-col justify-start gap-1 w-p50">
+          <div className="flex flex-col justify-start gap-1 w-p50 lg2_:w-full">
             <label htmlFor="">Contact</label>
             {errors.contact && (
               <span className="text-xs text-white">

@@ -42,14 +42,14 @@ const ContactUs = (props: Props) => {
                 <FaPhone /> <span>+9471 873 6668</span>
                 </div>
               </div> */}
-              <form className='flex flex-col gap-5 justify-center items-center p-4 bg-primary_light4 rounded-xl w-p75 xl2_:w-p85 lg2_:w-p100  px-vw2 py-vh6 text-sm' onSubmit={submitHandler}>
-                <section className='w-full flex justify-between items-center gap-p5'>
-                  <div className='flex flex-col justify-start gap-1 w-p50'>
+              <form className='flex flex-col gap-5 justify-center items-center p-4 bg-primary_light4 rounded-xl w-p75 xl2_:w-p85 lg2_:w-p100 sm_3:px-vw5  px-vw2 py-vh6 text-sm' onSubmit={submitHandler}>
+                <section className='w-full flex sm_3:flex-col sm_3:gap-5 justify-between sm_3:items-start items-center gap-p5'>
+                  <div className='flex flex-col justify-start gap-1 w-p50 sm_3:w-full'>
                     <label htmlFor="">First Name</label>
                    {errors.firstname && (<span className='text-xs text-white'>{errors.firstname.message}</span>)} 
                     <input type='text'  placeholder='first name'   className='rounded-md px-2 py-1 outline-none '  {...register("firstname",{required:"This field is required"})} />
                   </div>
-                  <div className='flex flex-col justify-start gap-1 w-p50'>
+                  <div className='flex flex-col justify-start gap-1 w-p50 sm_3:w-full'>
                     <label htmlFor="">Email</label>
                     {errors.email && (<span className='text-xs text-white'>{errors.email.message}</span>)} 
                     <input type='text'  placeholder='email'   className='rounded-md px-2 py-1 outline-none ' {...register("email",{required:"This field is required"})}  />

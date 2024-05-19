@@ -31,6 +31,7 @@ module.exports = {
 
         md_: { max: "767px" },
 
+        sm_3: { max: "440px" },
         sm_2: { max: "420px" },
         sm_: { max: "639px" },
       },

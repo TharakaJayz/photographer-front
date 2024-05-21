@@ -9,6 +9,7 @@ import AboutUs from './pages/AboutUs';
 import Layout from './layout/Layout';
 import PortfolioSingle from './pages/PortfolioSingle';
 import Quote from './pages/Quote';
+import Login from './pages/admin/Login';
 interface Props {
 
 }
@@ -22,6 +23,17 @@ const App = (props: Props) => {
             <Home />
           </Layout>
         } />
+
+        {/* Admin routes*/}
+
+
+        <Route path='/admin' element={
+          
+            <Login />
+          
+        } />
+
+        {/* Admin routes*/}
         <Route path='/contact' element={<Layout>
           <ContactUs />
         </Layout>} />

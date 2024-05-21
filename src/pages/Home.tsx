@@ -17,7 +17,7 @@ const Home = (props: Props) => {
              <HomeMemory  />
              <HomeService />
              {/* <HomeSwiper/> */}
-             <HomeReview />
+             {/* <HomeReview /> */}
         </div>
     )
 }

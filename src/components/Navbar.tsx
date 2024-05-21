@@ -22,9 +22,9 @@ const Navbar = () => {
                     <NavLink  className={({ isActive }) =>
                          isActive ? "text-primary font-semibold lg_:w-full lg_:text-left lg_:text-white lg_:bg-primary  lg_:pl-vw5 lg_:py-vh1  " : "text-white lg_:w-full lg_:text-left lg_:pl-vw5 lg_:py-vh1  "
                     }  to="/about" onClick={()=>{setNavSecLogic(false)}}>About US</NavLink>
-                    <NavLink className={({ isActive }) =>
+                    {/* <NavLink className={({ isActive }) =>
                          isActive ? "text-primary font-semibold lg_:w-full lg_:text-left lg_:text-white lg_:bg-primary  lg_:pl-vw5 lg_:py-vh1  " : "text-white lg_:w-full lg_:text-left lg_:pl-vw5 lg_:py-vh1  "
-                    } to="/service" onClick={()=>{setNavSecLogic(false)}}>Services</NavLink>
+                    } to="/service" onClick={()=>{setNavSecLogic(false)}}>Services</NavLink> */}
                     <NavLink className={({ isActive }) =>
                         isActive ? "text-primary font-semibold lg_:w-full lg_:text-left lg_:text-white lg_:bg-primary  lg_:pl-vw5 lg_:py-vh1  " : "text-white lg_:w-full lg_:text-left lg_:pl-vw5 lg_:py-vh1  "
                     } to="/portfolio" onClick={()=>{setNavSecLogic(false)}}>Portfolio</NavLink>
